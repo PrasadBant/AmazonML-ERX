@@ -1,0 +1,15 @@
+experiment_id,description,blocking,normalization,features,model,threshold,candidate_recall,avg_candidates,p95_candidates,precision,recall,macro_f0_5,singleton_accuracy,runtime,memory,status
+V5,180K-S1 model + one-owner th 0.61; official validator PASS; half-split 0.97774/0.97741 vs V4 0.97726/0.97667,v3 pair keys cap1000 top100+20n+20a,v3,v3 (62),xgb_v3_p3_big,0.61,0.97537,79.7,116,0.98949,0.9515,0.97763,0.97599,train 25m + rescore 58m + assembly 44m,<=4.7GB,CHAMPION
+V5_candidate,-> released as V5,v3 pair keys cap1000 top100+20n+20a,v3,v3 (62),xgb_v3_p3_big,0.61,0.97537,79.7,116,,,0.97763,,,,ACCEPTED (V5)
+O02_one_owner_th0.55,-> released as V4,v3 pair keys cap1000 top100+20n+20a,v3,v3 (62),xgb_v3_p2_big,0.55,0.97537,79.7,116,,,0.97704,,,,ACCEPTED (V4)
+V4,V3 scores + one-owner th 0.55; official validator PASS,v3 pair keys cap1000 top100+20n+20a,v3,v3 (62),xgb_v3_p2_big,0.55,0.97537,79.7,116,0.98838,0.9527,0.97704,0.97634,assembly 53m,<3GB,FALLBACK
+M_v3_p3_big_plain,"180K-S1 model, plain threshold",v3 pair keys cap1000 top100+20n+20a,v3,v3 (62),xgb_v3_p3_big,0.78,0.97537,79.7,116,0.98991,0.94431,0.97596,0.98023,,,superseded by one-owner variant
+D06_noaddr_threshold,addr 0.66 / no-addr 0.88 (in-sample tuned),v3 pair keys cap1000 top100+20n+20a,v3,v3 (62),CHAMPION_V3 scores,see decision_rules csv,0.97537,79.7,116,0.98852,0.94682,0.9755,0.97458,,,"REJECTED (<=+0.0003, within tuning noise)"
+D07_per_country_threshold,diagnostic only; France unseen,v3 pair keys cap1000 top100+20n+20a,v3,v3 (62),CHAMPION_V3 scores,see decision_rules csv,0.97537,79.7,116,0.98837,0.94654,0.97528,0.97493,,,"REJECTED (<=+0.0003, within tuning noise)"
+D02_per_source_thresholds,S2 0.69 / S3 0.73,v3 pair keys cap1000 top100+20n+20a,v3,v3 (62),CHAMPION_V3 scores,see decision_rules csv,0.97537,79.7,116,0.98829,0.94672,0.97524,0.97528,,,"REJECTED (<=+0.0003, within tuning noise)"
+D03_best_plus_second_rule,"best>=0.66, others>=0.70",v3 pair keys cap1000 top100+20n+20a,v3,v3 (62),CHAMPION_V3 scores,see decision_rules csv,0.97537,79.7,116,0.9881,0.94741,0.97522,0.97175,,,"REJECTED (<=+0.0003, within tuning noise)"
+D04_entity_gate,no gain over global,v3 pair keys cap1000 top100+20n+20a,v3,v3 (62),CHAMPION_V3 scores,see decision_rules csv,0.97537,79.7,116,0.98793,0.94766,0.9752,0.97316,,,"REJECTED (<=+0.0003, within tuning noise)"
+D05_margin_rule,no gain over global,v3 pair keys cap1000 top100+20n+20a,v3,v3 (62),CHAMPION_V3 scores,see decision_rules csv,0.97537,79.7,116,0.98793,0.94766,0.9752,0.97316,,,"REJECTED (<=+0.0003, within tuning noise)"
+CHAMPION_V3,v3 (fallback),v3 pair keys cap1000 top100+20n+20a,v3,v3 (62),xgb_v3_p2_big,0.69,0.97537,79.7,116,0.98793,0.94766,0.9752,0.97316,test 9000s,6.2GB,FALLBACK
+D08b_isotonic_calibration,half-split honest eval; raw half-split = 0.97499,v3 pair keys cap1000 top100+20n+20a,v3,v3 (62),CHAMPION_V3 scores,see decision_rules csv,0.97537,79.7,116,0.98835,0.94563,0.97504,0.97464,,,"REJECTED (<=+0.0003, within tuning noise)"
+D01_top1_only,only best candidate per S1,v3 pair keys cap1000 top100+20n+20a,v3,v3 (62),CHAMPION_V3 scores,see decision_rules csv,0.97537,79.7,116,0.99338,0.37344,0.69039,0.96292,,,REJECTED

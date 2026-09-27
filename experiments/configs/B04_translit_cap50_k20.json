@@ -1,0 +1,4 @@
+{
+  "strategy": "B01 + learned Indic->Latin word dict (folds 0-7)",
+  "dev": "20000 S1 from fold 9, pool = full train S2+S3"
+}

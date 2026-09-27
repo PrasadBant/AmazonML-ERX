@@ -1,0 +1,4 @@
+{
+  "model": "M2_randomforest",
+  "train_rows": 1000000
+}

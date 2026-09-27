@@ -1,0 +1,4 @@
+{
+  "rule": "predict only if best candidate p>=0.8",
+  "base_model": "v1_nc"
+}

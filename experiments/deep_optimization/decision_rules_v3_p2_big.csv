@@ -1,0 +1,11 @@
+experiment_id,params,macro_f0_5,precision,recall,singleton_accuracy
+D00_global_threshold(champion),"(np.float64(0.69),)",0.9752,0.98793,0.94766,0.97316
+D01_top1_only,"(np.float64(0.55),)",0.69039,0.99338,0.37344,0.96292
+D02_per_source_thresholds,"(np.float64(0.6900000000000002), np.float64(0.7300000000000002))",0.97524,0.98829,0.94672,0.97528
+D03_best_plus_second_rule,"(np.float64(0.6599999999999998), np.float64(0.7000000000000002))",0.97522,0.9881,0.94741,0.97175
+D04_entity_gate,"(0.69, 0.69)",0.9752,0.98793,0.94766,0.97316
+D05_margin_rule,"(0.69, 0.3)",0.9752,0.98793,0.94766,0.97316
+D06_noaddr_threshold,"(np.float64(0.66), np.float64(0.8799999999999998))",0.9755,0.98852,0.94682,0.97458
+D07_per_country_threshold(diagnostic),"(np.float64(0.7600000000000001), np.float64(0.66))",0.97528,0.98837,0.94654,0.97493
+D08a_raw_prob_halfsplit,"th=0.73 chosen on even S1, scored on odd S1",0.97499,0.98838,0.94537,0.97464
+D08b_isotonic_halfsplit,"th=0.7 chosen on even S1, scored on odd S1",0.97504,0.98835,0.94563,0.97464

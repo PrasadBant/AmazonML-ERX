@@ -1,0 +1,27 @@
+# Python
+__pycache__/
+*.pyc
+.pytest_cache/
+*.egg-info/
+
+# Local machine settings, secrets, environments
+configs/local.json
+.env
+.env.*
+.venv/
+venv/
+
+# Challenge data and large generated artifacts (never commit)
+/data/
+/data_work/
+/logs/
+*.duckdb
+*.parquet
+
+# Submission payloads: TSVs are 0.1-1.8 GB each; zips and staging folders are rebuilt from them
+submissions/**/*.tsv
+submissions/packages/
+*.zip
+
+# Local backup made before the repository restructure
+/.backup_pre_restructure/

@@ -1,0 +1,97 @@
+
+================================================================================
+train_source1.tsv
+================================================================================
+rows=2206821  cols=4
+  - entity_id: VARCHAR
+  - business_name: VARCHAR
+  - business_address: VARCHAR
+  - country: VARCHAR
+  name_missing=0 addr_missing=0 country_missing=0
+  uniq_ids=2206821 (dup_ids=0) uniq_names=1539229 uniq_countries=2
+  top countries: [('US', 1323633), ('India', 883188)]
+  id prefixes: [('S1-', 2206821)]
+  samples: [('S1-925783039', "Orelee's Barbershop", '1795 Westchester Drive, High Point, NC', 'US'), ('S1-773889195', 'Prime Money', '17560 Ellis Road, Tahlequah, OK', 'US'), ('S1-377745466', 'B+ Retail Inc', '1712 Montebello Avenue, Phoenix, AZ', 'US')]
+
+================================================================================
+train_source2.tsv
+================================================================================
+rows=5034616  cols=4
+  - entity_id: VARCHAR
+  - business_name: VARCHAR
+  - business_address: VARCHAR
+  - country: VARCHAR
+  name_missing=0 addr_missing=168967 country_missing=0
+  uniq_ids=5034616 (dup_ids=0) uniq_names=4402009 uniq_countries=2
+  top countries: [('US', 3016817), ('India', 2017799)]
+  id prefixes: [('S2-', 5034616)]
+  samples: [('S2-166376419', 'राम मार्केटिंग प्राइवेट लिमिटेड', 'KH NO. -570/13, NEW DELHI, WEST DELHI, Delhi', 'India'), ('S2-764573417', '-- Holloway Peak Inc Seafood', '105 ELM ST, MORGANTON, NC', 'US'), ('S2-639257739', 'आदित्य प्रॉपर्टीज एलएलपी', 'G-3/571, GULMOHAR COLONY, BHOPAL, Madhya Pradesh', 'India')]
+
+================================================================================
+train_source3.tsv
+================================================================================
+rows=5285603  cols=4
+  - entity_id: VARCHAR
+  - business_name: VARCHAR
+  - business_address: VARCHAR
+  - country: VARCHAR
+  name_missing=0 addr_missing=175916 country_missing=0
+  uniq_ids=5285603 (dup_ids=0) uniq_names=4651609 uniq_countries=2
+  top countries: [('US', 3170056), ('India', 2115547)]
+  id prefixes: [('S3-', 5285603)]
+  samples: [('S3-202863386', 'wilfordhancock.com', 'Mack Rd, Haltom City, Texas', 'US'), ('S3-859268022', 'International South Consultants Private Ltd', None, 'India'), ('S3-22467283', 'LLC Moncada Léarning Center', '5780 Fawn Ct, Fort Worth, Texas', 'US')]
+
+================================================================================
+train_ground_truth.tsv
+================================================================================
+rows=2206821 cols=2
+  - source1_entity_id: VARCHAR
+  - matched_entity_ids: VARCHAR
+  n_rows=2206821 uniq_s1=2206821 dup_s1_rows=0 singleton_rows=123247
+  match-count distribution (n_matches -> count): [(0, 123247), (1, 119157), (2, 375212), (3, 530841), (4, 484115), (5, 321957), (6, 164868), (7, 63968), (8, 18680), (9, 4205), (10, 534), (11, 37)]
+  matched id source breakdown: [('S3', 3944746), ('S2', 3693619)]
+  samples: [('S1-965667', 'S2-681193310,S2-743505751,S3-775321672,S3-11291185,S3-860443364'), ('S1-55344266', 'S2-249013014,S2-197070651,S3-478195123,S3-384364074'), ('S1-343815751', 'S2-790675320,S2-479876582,S3-878454467'), ('S1-656753428', 'S2-153058913,S2-24659151,S3-679606215'), ('S1-102811957', 'S2-478959098,S2-553508714,S2-625774905,S3-728090388,S3-928796641,S3-449308785')]
+
+================================================================================
+test_source1.tsv
+================================================================================
+rows=1732544  cols=4
+  - entity_id: VARCHAR
+  - business_name: VARCHAR
+  - business_address: VARCHAR
+  - country: VARCHAR
+  name_missing=0 addr_missing=0 country_missing=0
+  uniq_ids=1732544 (dup_ids=0) uniq_names=1238867 uniq_countries=3
+  top countries: [('India', 809986), ('US', 663106), ('France', 259452)]
+  id prefixes: [('S1-', 1732544)]
+  samples: [('S1-714132312', 'Zephay Labs Inc', '2621 Cotten Road, Tyler, TX', 'US'), ('S1-106407869', 'Vision Partners Corp', 'IA, Iowa City, 1064 Newton Rd, Unit 11', 'US'), ('S1-156285671', '<< Team Ecole', '175 Boulevard du Président Franklin Roosevelt, Bordeaux, Nouvelle-Aquitaine', 'France')]
+
+================================================================================
+test_source2.tsv
+================================================================================
+rows=4887273  cols=4
+  - entity_id: VARCHAR
+  - business_name: VARCHAR
+  - business_address: VARCHAR
+  - country: VARCHAR
+  name_missing=0 addr_missing=129408 country_missing=0
+  uniq_ids=4887273 (dup_ids=0) uniq_names=4311041 uniq_countries=3
+  top countries: [('India', 2312565), ('US', 1871330), ('France', 703378)]
+  id prefixes: [('S2-', 4887273)]
+  samples: [('S2-192345572', 'Brahma Infosoft', 'COIMATORE COLONY, HUNSUR TQMYSORE DIST., Karnataka', 'India'), ('S2-566025912', 'Marina Ecole France Sarl', '63 R. DE DIEPPE, LILLE, Hauts-de-France', 'France'), ('S2-158121477', 'SCI Ptit Àmicale', '18 RUE JEN ZAY, Dunkerque, Nord', 'France')]
+
+================================================================================
+test_source3.tsv
+================================================================================
+rows=5082316  cols=4
+  - entity_id: VARCHAR
+  - business_name: VARCHAR
+  - business_address: VARCHAR
+  - country: VARCHAR
+  name_missing=0 addr_missing=136098 country_missing=0
+  uniq_ids=5082316 (dup_ids=0) uniq_names=4521929 uniq_countries=3
+  top countries: [('India', 2405000), ('US', 1945701), ('France', 731615)]
+  id prefixes: [('S3-', 5082316)]
+  samples: [('S3-462677478', 'मॉडर्न फाइनेंस', 'No 10 Enkay Square, 448A, Udyog Vihar Phase V, Gurugram, Gurgaon, HR', 'India'), ('S3-374810425', 'Shri Sai Infratech Co', '3/115, East Delhi, DL', 'India'), ('S3-198586129', 'Fractales Amis Groupe S.A.S', '23 Rue Icmre, La Teste-de-buch, Gironde', 'France')]
+
+DONE

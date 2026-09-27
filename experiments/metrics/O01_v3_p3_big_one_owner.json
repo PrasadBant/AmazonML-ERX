@@ -1,0 +1,10 @@
+{
+  "macro_f0_5": 0.9776343615069112,
+  "macro_precision": 0.9901045079365078,
+  "macro_recall": 0.9495939365079366,
+  "micro_precision": 0.9948049735990462,
+  "micro_recall": 0.946695071262345,
+  "singleton_accuracy": 0.9795197740112994,
+  "false_merge_rate": 0.005195026400953841,
+  "n_s1": 50000
+}

@@ -1,0 +1,7 @@
+{
+  "model": "xgb_v1_nc",
+  "threshold": 0.69,
+  "one_owner": false,
+  "cap": 200,
+  "k": 50
+}

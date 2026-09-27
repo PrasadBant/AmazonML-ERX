@@ -1,0 +1,24 @@
+=== LENGTH / CASE STATS (train) ===
+train_source1: name_len avg/min/max=24.0/3/105  addr_len avg/min/max=52.1/11/256  all_caps_name=0 (0.0%) all_caps_addr=4 (0.0%)
+train_source2: name_len avg/min/max=25.1/2/104  addr_len avg/min/max=47.8/8/249  all_caps_name=1407539 (28.0%) all_caps_addr=3191104 (63.4%)
+train_source3: name_len avg/min/max=25.2/2/123  addr_len avg/min/max=48.3/2/240  all_caps_name=400272 (7.6%) all_caps_addr=900 (0.0%)
+
+=== LENGTH / CASE STATS (test) ===
+test_source1: name_len avg/min/max=23.8/3/92  addr_len avg/min/max=57.2/11/268  all_caps_name=3 (0.0%) all_caps_addr=2 (0.0%)
+test_source2: name_len avg/min/max=25.7/2/102  addr_len avg/min/max=51.8/5/269  all_caps_name=1381158 (28.3%) all_caps_addr=2452030 (50.2%)
+test_source3: name_len avg/min/max=25.7/2/103  addr_len avg/min/max=50.1/5/267  all_caps_name=443634 (8.7%) all_caps_addr=1013 (0.0%)
+
+=== EXACT NAME+ADDRESS DUPLICATE RATE ===
+train_source1: total=2206821 exact_name+addr_dup_rows=0 (0.00%)
+train_source2: total=5034616 exact_name+addr_dup_rows=36650 (0.73%)
+train_source3: total=5285603 exact_name+addr_dup_rows=24031 (0.45%)
+test_source1: total=1732544 exact_name+addr_dup_rows=0 (0.00%)
+test_source2: total=4887273 exact_name+addr_dup_rows=32012 (0.66%)
+test_source3: total=5082316 exact_name+addr_dup_rows=21856 (0.43%)
+
+=== ENTITY_ID OVERLAP TRAIN vs TEST (should be 0 -- numeric IDs are independently assigned) ===
+S1 train/test: overlap_count=0
+S2 train/test: overlap_count=0
+S3 train/test: overlap_count=0
+
+DONE

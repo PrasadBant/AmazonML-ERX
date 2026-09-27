@@ -1,0 +1,12 @@
+{
+  "candidate_recall": 0.9640156997140243,
+  "true_pairs": 172742,
+  "n_s1": 50000,
+  "avg_cands": 39.33764,
+  "median_cands": 50.0,
+  "p95_cands": 50.0,
+  "max_cands": 50,
+  "total_cands": 1966882,
+  "reduction_ratio": 0.9999961882940662,
+  "secs": 7.6
+}

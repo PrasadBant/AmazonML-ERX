@@ -1,0 +1,5 @@
+{
+  "data_dir": "C:/path/to/student_resource/dataset",
+  "work_dir": "C:/path/to/repo/data_work",
+  "official_validator": "C:/path/to/student_resource/utils/validate_submission.py"
+}

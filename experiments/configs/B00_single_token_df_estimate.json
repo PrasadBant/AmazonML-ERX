@@ -1,0 +1,4 @@
+{
+  "strategy": "single name/addr tokens, per country",
+  "dev": "20000 S1 from fold 9, pool = full train S2+S3"
+}

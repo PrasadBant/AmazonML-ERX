@@ -1,0 +1,4 @@
+{
+  "strategy": "pair keys (3 rarest name + 3 rarest addr tokens) + compact name; cap50 top20",
+  "dev": "20000 S1 from fold 9, pool = full train S2+S3"
+}

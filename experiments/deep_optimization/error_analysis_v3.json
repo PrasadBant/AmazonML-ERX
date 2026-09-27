@@ -1,0 +1,25 @@
+{
+  "n_true_pairs": 172742,
+  "n_FP": 1175,
+  "n_FN_model": 5274,
+  "n_FN_blocking": 4255,
+  "FP_target_owned_by_other_S1": 595,
+  "categories": {
+    "FN_model_target_no_address": 2290,
+    "FN_blocking_India": 1621,
+    "FN_blocking_target_no_address": 1557,
+    "FN_model_other": 1293,
+    "FN_model_name_changed_same_address": 810,
+    "FN_model_near_threshold": 683,
+    "FN_blocking_transliterated": 547,
+    "FN_blocking_US": 530,
+    "FP_other_near_duplicate": 373,
+    "FP_similar_name_diff_house_number": 262,
+    "FP_same_address_diff_name": 194,
+    "FP_same_name_diff_address": 187,
+    "FN_model_transliterated_name": 127,
+    "FP_on_true_singleton": 87,
+    "FP_target_no_address": 72,
+    "FN_model_address_variation": 71
+  }
+}

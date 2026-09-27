@@ -1,0 +1,9 @@
+duckdb==1.5.5
+numpy==2.2.3
+pandas==2.2.3
+pyarrow==25.0.1
+rapidfuzz==3.14.6
+scikit-learn==1.6.1
+xgboost==3.3.0
+psutil==6.1.1
+Unidecode==1.4.0

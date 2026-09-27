@@ -1,0 +1,46 @@
+{
+  "version": "v3",
+  "description": "XGBoost on 120K training-fold S1, plain threshold",
+  "blocking": {
+    "df_cap": 1000,
+    "top_k": 100,
+    "top_k_name": 20,
+    "top_k_address": 20,
+    "rarest_name_tokens": 3,
+    "rarest_address_tokens": 3
+  },
+  "training": {
+    "feature_tag": "v3",
+    "entities_per_part": 60000,
+    "part_offsets": [
+      0,
+      60000
+    ],
+    "validation_entities": 50000,
+    "easy_negative_rate": 0.2
+  },
+  "model": {
+    "name": "v3_p2_big",
+    "params": {
+      "n_estimators": 1500,
+      "max_depth": 10,
+      "learning_rate": 0.05,
+      "subsample": 0.8,
+      "colsample_bytree": 0.8,
+      "min_child_weight": 5
+    }
+  },
+  "inference": {
+    "chunk_size": 50000,
+    "scores_dir": "infer_test_v3"
+  },
+  "decision": {
+    "threshold": 0.69,
+    "one_owner": false,
+    "margin": 0.0
+  },
+  "results": {
+    "validation_macro_f0_5": 0.9752,
+    "leaderboard": 0.963372
+  }
+}

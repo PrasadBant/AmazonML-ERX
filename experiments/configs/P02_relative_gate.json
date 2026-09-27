@@ -1,0 +1,4 @@
+{
+  "rule": "p>=th and p>=alpha*max_p(S1), alpha 0.3/0.5/0.7",
+  "base_model": "v1_nc"
+}

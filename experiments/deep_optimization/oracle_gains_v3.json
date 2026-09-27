@@ -1,0 +1,8 @@
+{
+  "base": 0.9751971660941298,
+  "oracle_remove_all_FP": 0.0059956088358206205,
+  "oracle_remove_FP_owned_elsewhere": 0.0029632680682608603,
+  "oracle_add_FN_model": 0.010659320851399423,
+  "oracle_add_FN_model_noaddr": 0.0045567030434440214,
+  "oracle_add_FN_blocking": 0.00873953059081467
+}

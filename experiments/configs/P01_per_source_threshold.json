@@ -1,0 +1,4 @@
+{
+  "rule": "separate thresholds S2/S3 grid +-0.12",
+  "base_model": "v1_nc"
+}

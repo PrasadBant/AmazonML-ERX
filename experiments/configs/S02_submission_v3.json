@@ -1,0 +1,9 @@
+{
+  "model": "xgb_v3_p2_big",
+  "threshold": 0.69,
+  "one_owner": false,
+  "cap": 1000,
+  "k": 100,
+  "kn": 20,
+  "ka": 20
+}

@@ -1,0 +1,7 @@
+{
+  "official_validator_matching": "PASS --check-ids",
+  "candidate_checks": "ALL PASS (check_candidates.py)",
+  "n_candidates": 141240118,
+  "n_matches": 5755634,
+  "empty_rows": 99760
+}

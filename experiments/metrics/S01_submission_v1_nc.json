@@ -1,0 +1,6 @@
+{
+  "validator": "PASS --check-ids",
+  "n_candidates": 68775630,
+  "n_matches": 5603031,
+  "empty_rows": 104692
+}
